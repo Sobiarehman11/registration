@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo left">register</a>
+      <ul id="nav-mobile" class="right">
+        <li><a class="modal-trigger" href="#modal1">signin</a></li>
+        <li><a class="modal-trigger" href="#modal2">signup</a></li>
+        <li><a href="collapsible.html">logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Modal Structure for Signin -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Signin</h4>
+      <form>
+        <input type="text" id="signinEmail" placeholder="Email">
+        <input type="password" id="signinPassword" placeholder="Password">
+        <button type="submit" class="waves-effect waves-light btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal Structure for Signup -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Signup</h4>
+      <form>
+        <input type="text" id="signupEmail" placeholder="Email">
+        <input type="password" id="signupPassword" placeholder="Password">
+        <button type="submit" class="waves-effect waves-light btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script> 
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems);
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+  
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script> 
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+</script>
+<script type="module" src="./firebase.js"></script>
+<script type="module" src="./auth.js"></script>
+</body>
+</html>
